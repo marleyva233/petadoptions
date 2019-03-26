@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- meta tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Adoptions</title>
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<!-- bootstrap CDN -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<!-- my custom css -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div id="app">
+			<nav>
+				<header>
+					<ul id="mainLinks">
+						<li>About</li>
+						<li>Hours</li>
+						<li>Contact</li>
+						<li>Espa&#x00f1;ol</li>
+					</ul>
+					<h1 class="pt-5">San Jose City Animal Shelter</h1>
+				</header>
+				<ul id="secondaryLinks" class="bg-light">
+					<li><router-link to="/home">Home</router-link></li>
+					<li><router-link to="/adopt">Adopt</router-link></li>
+					<li>Services</li>
+					<li>Events</li>
+					<li>Lost Pets</li>
+					<li>Humane Investigations</li>
+					<li>Volunteer</li>
+					<li>Wildlife</li>
+					<li>Vet Clinic</li>
+					<li>Training</li>
+				</ul>
+			</nav>
+		<div id="view">
+				<transition mode="out-in" name="slide-fade">
+					<router-view>
+					</router-view>
+				</transition>
+			</div>
+		</div>
+		<!--jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<!-- popper is required for bootstrap 4 js functionality -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<!-- makes bootstrap 4 js work -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<!-- this connects the vue js framework -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<!-- this links the vue router to my project -->
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+		<!-- my custom js -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+h1,
+h2{
+	text-align:center;
+}
+img{
+	width: 80%;
+	max-width: 400px;
+}
+a, li{
+	color:#000;
+	font-size: 12px;
+}
+a:hover,
+li:hover{
+	color:#4267B2;
+	text-decoration: none;
+	cursor: pointer;
+}
+ul{
+	display: inline-block;
+	list-style: none;
+}
+li{
+	display: inline-block;
+}
+nav{
+	text-align: center;
+}
+#mainLinks{
+	text-align: right;
+	position: absolute;
+	right: 0;
+	padding: 1%;
+}
+p{
+	text-align: left;
+	text-indent: 10px;
+}
+.float{
+	float:left;
+	padding-right: 1%;
+}
